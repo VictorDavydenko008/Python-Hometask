@@ -1,6 +1,6 @@
 import plotly.graph_objects as go
 
-names = ["Власова Каріна", 
+students = ["Власова Каріна", 
         "Власова Марина", 
         "Войдюк Ігор", 
         "Волощук Ростислав",
@@ -27,7 +27,7 @@ names = ["Власова Каріна",
 
 absence = [4, 6, 2, 5, 4, 5, 8, 5, 4, 7, 0, 8, 2, 1, 5, 11, 7, 6, 3, 5, 5, 2, 7, 3]
 
-fig = go.Figure(data = [go.Bar(x = names, y = absence, marker={'color': 'light blue'})])
+fig = go.Figure(data = [go.Bar(x = students, y = absence, marker={'color': 'light blue'})])
 
 '''bar = go.Bar(x=names, y=absence)
 bar.marker.color = ['red' if i >= 10 else 'grey' for i in absence]
